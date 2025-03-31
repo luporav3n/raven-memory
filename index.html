@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raven│Memory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Raven│Memory</h1>
+
+  <div id="inject_display">
+    <h3>受信データ</h3>
+    <pre id="json_output">(まだ受信していません)</pre>
+    <button id="save_button">構築ログに保存</button>
+  </div>
+
+  <div id="history_section">
+    <h3>保存済みログ</h3>
+    <ul id="log_list"></ul>
+  </div>
+
+  <div id="reinject_section">
+    <h3>再injectリンク</h3>
+    <input type="text" id="reinject_url" readonly />
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
